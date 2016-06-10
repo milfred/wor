@@ -1,0 +1,15 @@
+<section class="form">
+  <h3>Log In</h3>
+  <% if @message %>
+    <p class="highlight"><%= @message %></p>
+  <% end %>
+  <form action="/login" method="post">
+    <label for="email">Email</label>
+    <input class="inner-shadow" name="email" type="text">
+
+    <label for="password">Password</label>
+    <input class="inner-shadow" name="password" type="password" required="required" minlength="8">
+
+    <input type="submit" value="Login" class="button">
+  </form>
+</section>
