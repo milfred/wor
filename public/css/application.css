@@ -1,0 +1,92 @@
+html {
+  min-height: 100%;
+}
+body {
+  padding: 0 0 75px 0;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  background-color: #F8DB9A;
+}
+.wrapper {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* table styles for board */
+.board {
+  display: table;
+  background-color: #2D2D29;
+  height: 450px;
+  width: 450px;
+  margin: 50px auto 0;
+  color: white;
+}
+.board-row {
+  display: table-row;
+}
+.board-cell {
+  display: table-cell;
+  border: 1px solid #37324A;
+  border-collapse: collapse;
+  width: 48px;
+  height: 44px;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.teal {
+  background-color: #329996;
+}
+.berry {
+  background-color: #933C60;
+}
+.orange {
+  background-color: #F3A358;
+}
+
+/* Submit button */
+.submit {
+  display: block;
+  width: 90px;
+  margin: 20px auto 0;
+  padding: 5px 8px;
+  background-color: #F3A358;
+  border-radius: 3px;
+  border: 1px solid #37324A;
+  box-shadow: 1px 1px 2px #696969;
+}
+.submit:active {
+  box-shadow: 0 0 0;
+}
+.submit input[type="submit"] {
+  font-size: 27px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: inherit;
+}
+
+.selected-word {
+  margin-top: 35px;
+  text-align: center;
+  height: 50px;
+}
+.selected-letter {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  margin-right: 4px;
+  padding: 5px;
+  border: 1px solid #37324A;
+  background-color: white;
+  border-radius: 5px;
+}
+.selected-letter:last-child {
+  margin-right: 0;
+}
+.selected-square {
+  outline: 2px solid #F8DB9A;
+}
