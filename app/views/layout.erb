@@ -6,30 +6,15 @@
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="/js/jquery-2.2.4.js"></script>
+  <script type="text/javascript" src="js/noty/packaged/jquery.noty.packaged.min.js"></script>
   <script src="/js/application.js"></script>
+  <script src="/js/game.js"></script>
 
   <title></title>
 </head>
 <body>
   <div class="wrapper">
-      <nav class="full-width-bar clear">
-        <div class="session-links">
-          <% if current_user %>
-            <span class="gray">Welcome: <%= current_user.email %></span>
-            <form class="linkify" action="/logout" method="post">
-              <input type="hidden" name="_method" value="delete"/>
-              <input type="submit" value="logout"/>
-            </form>
-          <% else %>
-            <a href="/login">login</a>
-            <a href="/register">register</a>
-          <% end %>
-        </div>
-      </nav>
-      <header>
-        <h1 class="title masthead"><a href="/">Belch!</a></h1>
-      </header>
-      <%= yield %>
-    </div>
+    <%= yield %>
+  </div>
 </body>
 </html>
